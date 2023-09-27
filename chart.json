@@ -1,0 +1,9 @@
+Gymnasium Collection         Member Collection
+       |                              |
+       |                              |
+       v                              v
+   Session Collection <--------- SessionCoach Collection
+       |
+       |
+       v
+  Coach Collection

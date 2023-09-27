@@ -1,0 +1,71 @@
+
+{
+    "_id": ObjectId("gymnasium_id_1"),               
+    "Name": "Gym 1",
+    "Address": "tunis downtown",
+    "TelephoneNumber": "22-222-222"                   
+ }
+ {
+    "_id": ObjectId("gymnasium_id_2"),
+    "Name": "Gym 2",
+    "Address": "manzah 5",
+    "TelephoneNumber": "55"
+ }
+ 
+ {
+    "_id": ObjectId("member_id_1"),
+    "GymnasiumID": ObjectId("gymnasium_id_1"),      //
+    "LastName": "Doe",
+    "FirstName": "John",
+    "Address": "789 Oak St",
+    "DateOfBirth": ISODate("1990-05-15"),
+    "Gender": "Male"
+ }
+ {
+    "_id": ObjectId("member_id_2"),
+    "GymnasiumID": ObjectId("gymnasium_id_2"),
+    "LastName": "Smith",
+    "FirstName": "Jane",
+    "Address": "101 Maple St",
+    "DateOfBirth": ISODate("1985-12-10"),
+    "Gender": "Female"
+ }
+ {
+    "_id": ObjectId("session_id_1"),
+    "GymnasiumID": ObjectId("gymnasium_id_1"),
+    "SportType": "Yoga",
+    "Schedule": ISODate("2023-10-01T08:00:00Z"),
+    "MaxCapacity": 20
+ }
+ {
+    "_id": ObjectId("session_id_2"),
+    "GymnasiumID": ObjectId("gymnasium_id_2"),
+    "SportType": "CrossFit",
+    "Schedule": ISODate("2023-10-02T18:30:00Z"),
+    "MaxCapacity": 20
+ }
+ {
+    "_id": ObjectId("coach_id_1"),
+    "LastName": "Trainer",
+    "FirstName": "Alice",
+    "Age": 30,
+    "Specialty": "Yoga"
+ }
+ {
+    "_id": ObjectId("coach_id_2"),
+    "LastName": "Instructor",
+    "FirstName": "Bob",
+    "Age": 35,
+    "Specialty": "CrossFit"
+ }
+ {
+    "_id": ObjectId("session_coach_id_1"),
+    "SessionID": ObjectId("session_id_1"),
+    "CoachID": ObjectId("coach_id_1")
+ }
+ {
+    "_id": ObjectId("session_coach_id_2"),
+    "SessionID": ObjectId("session_id_2"),
+    "CoachID": ObjectId("coach_id_2")
+ }
+ 
